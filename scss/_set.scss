@@ -1,0 +1,126 @@
+.set {
+    @media (max-width: 500px) {
+        & {
+            flex-direction: column;
+            position: relative;
+        }
+    }
+
+    &__select {
+        background: 0;
+        border: 1px solid #d2d2d2;
+        font-size: 0.9em;
+        color: #221f1f;
+        width: 190px;
+        height: 33px;
+        padding: 0 6px;
+        border-radius: 4px;
+        transition: border-color .2s;
+        cursor: pointer;
+
+        &:hover {
+            border-color: darkgrey;
+        }
+        
+        @media (max-width: 650px) {
+            & {
+                position: relative;
+                top: 47px;
+                left: 110px;
+            }
+        }
+
+        @media (max-width: 500px) {
+            & {
+                left: 0;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    &__amount-product {
+        line-height: 33px;
+        margin-right: auto;
+
+        @media (max-width: 650px) {
+            & {
+                position: absolute;
+                bottom: 7px;
+            }
+        }
+
+        @media (max-width: 500px) {
+            & {
+                position: absolute;
+                bottom: 57px;
+            }
+        }
+    }
+
+    &__ui_icon {
+        position: absolute;
+        top: 9px;
+        z-index: 1;
+    }
+
+    &__ui_big-icon {
+        left: 13px;
+        fill: #fff;
+    }
+
+    &__ui_small-icon {
+        right: 13px;
+    }
+
+    &__checked:checked + .set__ui .set__ui-circle {
+        left: 40px;
+        border-radius: 0;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
+
+    &__checked:checked + .set__ui .set__ui_small-icon {
+        fill: #fff;
+    }
+
+    &__checked:checked + .set__ui .set__ui_big-icon {
+        fill: #000;
+    }
+
+    &__checked {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    &__ui {
+        position: relative;
+        margin-left: 25px;
+        width: 80px;
+        height: 32px;
+        border: 1px solid #d2d2d2;
+        display: inline-block;
+        border-radius: 4px;
+
+        @media (max-width: 650px) {
+            & {
+                top: 47px;
+                left: 110px;
+            }
+        }
+    }
+
+    &__ui-circle {
+        display: inline-block;
+        height: 32px;
+        width: 40px;
+    }
+
+    &__ui-circle {
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+        background: red;
+        position: relative;
+        left: 0;
+        bottom: 1px;
+    }
+}

@@ -1,0 +1,151 @@
+.socials {
+    display: flex;
+    align-items: center;
+    
+    @media (max-width: 1000px) {
+        & {
+           width: 50%; 
+        }
+    }
+
+    &__icon {
+        width: 20px;
+        margin: auto;
+        height: 20px;
+        fill: #fff;
+    }
+
+    &__link {
+        display: flex;
+        margin-right: 10px;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        transition: transform .3s;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    &__link:first-of-type {
+        background: #506098;
+    }
+
+    &__link:nth-of-type(2) {
+        background: #e90000;
+    }
+
+    &__link:nth-of-type(3) {
+        background: linear-gradient(45deg,#ffb700 14.65%,#ff6800 31.68%,#cb217d 54.72%,#7e00aa 85.35%);
+    }
+
+    &__link:nth-of-type(4) {
+        background: #7d3daf;
+    }
+}
+
+.footer {
+    margin-top: 40px;
+
+    @media (max-width: 600px) {
+        & {
+            padding: 0 25px;
+        }
+    }
+
+    &__services {
+        @media (max-width: 1000px) {
+            & {
+               width: 50%; 
+               margin-bottom: 30px;
+            }
+        }
+
+        @media (max-width: 500px) {
+            & {
+               width: 100%; 
+               margin-bottom: 0;
+               margin-top: 30px;
+            }
+        }
+    }
+    
+    &__info,
+    &__licenc {
+        padding: 50px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__info {
+        background: #112638;
+        justify-content: space-between;
+    }
+
+    &__licenc {
+        background: #f5f5f5;
+    }
+
+    &__copyright {
+        margin-left: auto;
+        line-height: 32px;
+        font-size: 1em;
+    }
+
+    &__copyright_gray {
+        letter-spacing: 1px;
+        font-size: 0.9em;
+        color: #797878;
+    }
+
+    &__contacts {
+        margin-left: auto;
+
+        @media (max-width: 1020px) {
+            & {
+               margin-top: 30px;
+               margin-left: 0;
+            }
+        }
+    }
+
+    &__phone {
+        color: #000;
+        text-decoration: none;
+        transition: color .2s;
+
+        &:hover {
+            color: red;
+        }
+    }
+}
+
+.services {
+    &__link {
+        color: #fff;
+        text-decoration: none;
+        line-height: 1.5em;
+        transition: color .2s, text-decoration .2s;
+
+        &:hover {
+            color: red;
+            text-decoration: underline;
+        }
+    }
+
+    &__item_grey {
+        font-weight: 200;
+        letter-spacing: 0.2em;
+        font-size: 1em;
+        border-bottom: 1px solid #fff;
+        line-height: 1.2em;
+        margin-bottom: 7px;
+        color: #fff;
+        width: fit-content;
+
+        @media (max-width: 650px) {
+            width: min-content;
+        }
+    }
+}

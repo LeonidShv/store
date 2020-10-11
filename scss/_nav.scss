@@ -1,0 +1,32 @@
+.nav-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.15);
+    padding: 0 113px;
+}
+
+.nav {
+    display: flex;
+    background: #fff;
+    margin-top: 70px;
+    padding: 20px;
+    max-width: 800px;
+    min-height: 200px;
+    padding: 20px;
+    border-radius: 5px;
+
+    &__btn {
+        line-height: 1.5em;
+        border: 0;
+        background: 0;
+        color: #3e77aa;
+        cursor: pointer;
+    }
+
+    &__list {
+        width: 50%;
+    }
+}

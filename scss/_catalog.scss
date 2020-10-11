@@ -1,0 +1,29 @@
+.catalog {
+    margin-top: 22px;
+    position: relative;
+
+    @media (max-width: 1200px) {
+        & {
+            margin-top: 52px;
+        }
+    }
+
+    &__products_empty {
+        display: none;
+        font-size: 2em;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    &-pagination {
+        width: 100%;
+    }
+
+    &__filter {
+        @media (max-width: 1200px) {
+            & {
+                display: none;
+            }
+        }
+    }
+}

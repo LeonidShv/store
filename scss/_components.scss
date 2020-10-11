@@ -1,0 +1,125 @@
+.search {
+    &__input {
+        padding: 0;
+        width: 100%;
+        line-height: 40px;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+        padding-left: 40px;
+        background-image: url(../assets/icons/verify.svg);
+        background-size: 18px;
+        background-repeat: no-repeat;
+        background-position: 12px;
+    }
+
+    &__btn {
+        padding: 0 10px;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        background-color: #c00;
+        white-space: nowrap;
+        font-size: 16px;
+        font-weight: 700;
+        color: #fff;
+        cursor: pointer;
+        transition: background .2s ease-in-out;
+
+        &:hover {
+            background: red;
+        }
+    }
+
+    &__btn,
+    &__input {
+        align-self: center;
+        height: 40px;
+        border: 0;
+    }
+}
+
+.m-r-24 {
+    margin-right: 24px;
+}
+
+.v-hidden {
+    visibility: hidden;
+}
+
+.toggle-none {
+    display: none!important;
+}
+
+.breadcrumb {
+    margin-top: 10px;
+    list-style: none;
+
+    &__item {
+        display: inline;
+        font-size: 16px;
+
+        &:hover .breadcrumb__home {
+            fill: red;
+        }
+    }
+
+    &__item + &__item::before {
+        padding: 6px;
+        margin-right: 5px;
+        color: black;
+        content: "";
+        background: url(../assets/icons/next.svg) no-repeat center;
+    }
+
+    &__link {
+        color: #d2d2d2;
+        cursor: pointer;
+        text-decoration: none;
+
+        &:hover {
+            color: #01447e;
+            text-decoration: underline;
+        }
+
+        &:first-child:hover {
+            text-decoration: none;
+        }
+    }
+
+    &__home {
+        margin-right: 8px;
+        width: 15px;
+        transform: translateY(2px);
+    }
+}
+
+.d-flex {
+    display: flex;
+}
+
+.main {
+    padding: 0 50px;
+
+    @media (max-width: 600px) {
+        & {
+            padding: 0 25px;
+        }
+    }
+
+    &__title {
+        font-size: 2.8vw;
+        margin: 15px 0;
+        line-height: 42px;
+    }
+
+
+}
+
+.scroll-toggle {
+    overflow-y: hidden;
+}
+
+.disable {
+    position: relative;
+    z-index: -1;
+    opacity: 0.6;
+}

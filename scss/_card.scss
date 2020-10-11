@@ -1,0 +1,130 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 40px 40px 38px;
+    width: 50%;
+    border-bottom: 1px solid #d2d2d2;
+    border-right: 1px solid #d2d2d2;
+
+    @media (max-width: 1000px) {
+        & {
+            width: 100%!important;
+        }
+    }
+    
+    &__img {
+        max-width: 42%;
+        max-height: 324px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    &__notice {
+        text-transform: uppercase;
+        color: #fff;
+        width: fit-content;
+        font-size: 0.9em;
+        border-radius: 10%/50%;
+        position: absolute;
+        top: 7px;
+        left: 17px;
+        right: auto;
+        padding: 0px 6px;
+        line-height: 25px;
+    }
+
+    &__notice_o {
+        background: #ffa900;
+    }
+
+    &__notice_r {
+        background: #f84147;
+    }
+
+    &__like-img {
+        display: none;
+        width: 20px;
+        padding: 3px 0;
+        box-sizing: content-box;
+    }
+
+    &__like {
+        position: absolute;
+        top: 12px;
+        right: 15px;
+        vertical-align: top;
+        background: 0;
+        border: 0;
+    }
+
+    &__info {
+        margin-top: 30px;
+        font-size: 0.9em;
+        text-align: justify;
+        line-height: 1.2em;
+    }
+
+    &__price_crosse {
+        padding-top: 8px;
+        margin-top: auto;
+        text-decoration: line-through;
+        font-size: 0.9em;
+        color: #a6a5a5;
+    }
+
+    &__price {
+        color: #f84147;
+        font-size: 1.4em;
+        line-height: 1.5em;
+    }
+
+    &__state {
+        font-size: 0.85em;
+        letter-spacing: 0.7px;
+    }
+
+    &__state_r {
+        color: #ff5c00;
+    }
+
+    &__state_g {
+        color: #00a046;
+    }    
+
+    &__cart {
+        background: 0;
+        border: 0;
+        position: absolute;
+        bottom: 14px;
+        right: 15px;
+    }
+
+    &__cart_img {
+        max-width: 30px;
+        padding: 3px 3px 3px 0;
+        box-sizing: content-box;
+    }
+
+    &__like,
+    &__cart {
+        transition: background .2s;
+        border-radius: 4px;
+
+        &:hover {
+            background: rgba(245, 242, 242, 0.5);
+        }
+    }
+
+    /* for js */
+
+    &__img-toggle {
+        width: 57%;
+        min-height: 216px;
+    }
+
+    &-toggle {
+        padding: 20px;
+        width: 25%;
+    }
+}

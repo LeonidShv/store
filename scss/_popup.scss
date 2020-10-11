@@ -1,0 +1,84 @@
+.popup {
+    margin: auto;
+    padding: 70px 130px;
+    width: 90%;
+    border-radius: 8px;
+    background: #fff;
+
+    @media (max-width: 1000px) {
+        & {
+            padding: 50px 100px;
+        }
+    }
+
+    @media (max-width: 900px) {
+        & {
+            padding: 20px 50px;
+        }
+    }
+
+    @media (max-width: 700px) {
+        & {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 600px) {
+        & {
+            padding: 20px 10px;
+        }
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__info {
+        margin-bottom: 10px;
+    }
+
+    &__btn {
+        background-color: #00a046;
+        border: 1px solid #00a046;
+        color: #fff;
+        padding: 0 16px;
+        border-radius: 4px;
+        line-height: 40px;
+        font-size: 1em;
+        transition: color .2s ease-in-out;
+    }
+
+    &__img {
+        margin-bottom: 20px;
+        height: 200px;
+    }
+
+    &__title {
+        font-size: 1.6em;
+        line-height: 42px;
+
+        @media (max-width: 600px) {
+            & {
+                font-size: 1em;
+            }
+        }
+    }
+
+    &__cart {
+        position: static;
+    }
+}
+
+.popup-wrap {
+    width: 100%;
+    overflow-y: auto;
+    display: flex;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.15);
+}
